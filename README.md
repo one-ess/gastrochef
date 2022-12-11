@@ -29,8 +29,8 @@
 Зависимости: 
 
     jQuery
-    jquery-validation
-    jquery.maskedinput
+    jQuery-validation
+    jQuery.maskedinput
     @fancyapps/fancybox
     slick-carousel
     
