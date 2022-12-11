@@ -1,0 +1,305 @@
+<div class="order-modal" style="display: none" id="order-modal">
+  <form id="order-form" class="order-modal__form form" action="">
+    <div class="form__row">
+      <div class="form__column">
+        <div class="input-inner"><input id="name" class="input" name="name" type="text" placeholder="Имя" /></div>
+        <div class="input-inner">
+          <input id="phone" class="input phone" name="phone" type="phone" placeholder="Номер телефона" />
+        </div>
+        <div class="input-inner">
+          <input id="email" class="input" name="email" type="email" placeholder="Электронная почта" />
+        </div>
+        <div class="form__nutrition-programs-select select">
+          <button class="form__nutrition-programs-dropdown-btn input dropdown-btn">Программы питания: <span></span></button>
+          <ul class="form__nutrition-programs-dropdown-list dropdown-list">
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="ExpressFit">Express fit</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Slim">Slim</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Fitness">Fitness</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Balance">Balance</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Balance+">Balance+</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Strong">Strong</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Maxifit">Maxi fit</li>
+          </ul>
+          <input class="form__nutrition-programs-input programs _input-hidden" type="text" name="nutritionprogram" />
+        </div>
+        <div class="form__special-programs-select select">
+          <button class="form__special-programs-dropdown-btn input dropdown-btn">Специальные программы: <span></span></button>
+          <ul class="form__special-programs-dropdown-list dropdown-list">
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Keto">Keto</li>
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Detox">Detox</li>
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Veggie">Veggie</li>
+          </ul>
+          <input class="form__special-programs-input programs _input-hidden" type="text" name="specialprogram" />
+        </div>
+        <div class="form__street-input input-inner"><input class="input" name="street" type="text" placeholder="Улица" /></div>
+        <div class="form__input-small-row">
+          <div class="form__house-input input-small"><input class="input" type="text" /></div>
+          <div class="form__floor-input input-small"><input class="input" type="text" /></div>
+          <div class="form__flat-input input-small"><input class="input" type="text" /></div>
+        </div>
+      </div>
+      <div class="form__column">
+        <div class="form__datetime-select select">
+          <button class="form__datetime-dropdown-btn input dropdown-btn">Время доставки: <span></span></button>
+          <ul class="form__datetime-dropdown-list dropdown-list">
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="9:00-13:00">9:00-13:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="14:00-20:00">14:00-20:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="21:00-00:00">21:00-00:00</li>
+          </ul>
+          <input class="form__datetime-input _input-hidden" type="text" name="datetime" />
+        </div>
+
+        <div class="input-inner">
+          <input class="form__days-input input" type="text" placeholder="Количество дней заказа" />
+        </div>
+        <div class="form__payments-select select">
+          <button class="form__payments-dropdown-btn input dropdown-btn">Способ оплаты: <span></span></button>
+          <ul class="form__payments-dropdown-list dropdown-list">
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Наличными">Наличными</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Qiwi">Qiwi</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Visa/MasterCard">Visa/MasterCard</li>
+          </ul>
+          <input class="form__payments-input _input-hidden" type="text" name="payments" />
+        </div>
+        <div class="form__cutlery-select select">
+          <button class="form__cutlery-dropdown-btn input dropdown-btn">Мне нужны приборы: <span></span></button>
+          <ul class="form__cutlery-dropdown-list dropdown-list">
+            <li class="form__cutlery-dropdown-item dropdown-item" data-value="Да, нужны">Да, нужны</li>
+            <li class="form__cutlery-dropdown-item dropdown-item" data-value="Нет, не нужны">Нет, не нужны</li>
+          </ul>
+          <input class="form__cutlery-input _input-hidden" type="text" name="cutlery" />
+        </div>
+        <div class="input-inner"><input class="form__about-input input" type="text" placeholder="Откуда узнали о нас" /></div>
+        <div class="input-inner"><input class="form__wishes-input input" type="text" placeholder="Пожелания" /></div>
+        <div class="form__contacts-select select">
+          <button class="form__contacts-dropdown-btn input dropdown-btn">Как с Вами связаться?: <span></span></button>
+          <ul class="form__contacts-dropdown-list dropdown-list">
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Позвонить на номер телефона">Позвонить на номер телефона</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Написать по номеру в whatsapp">Написать по номеру в whatsapp</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Отправить сообщение на почту">Отправить сообщение на почту</li>
+          </ul>
+          <input class="form__contacts-input _input-hidden" type="text" name="contacts" />
+        </div>
+      </div>
+    </div>
+    <div class="form__row">
+      <div class="order__radiobuttons-inner _white">
+        <label class="order__label">
+          <input class="order__input-checkbox" type="checkbox" />
+          <span></span>
+          Тест-день! Получить скидку -30%?
+        </label>
+        <label class="order__label">
+          <input name="coop" class="order__input-checkbox" type="checkbox" />
+          <span class="coop"></span>
+          Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+        </label>
+      </div>
+      <button class="form__button button popup-btn" type="submit">Заказать</button>
+    </div>
+  </form>
+</div>
+<div class="phone-modal" style="display: none" id="phone-modal">
+  <form id="phone-form" action="">
+    <div class="phone-form__inner">
+      <span class="phone-form__label">Имя</span>
+      <div class="phone-form__input-inner"><input name="name" type="text" placeholder="Имя" /></div>
+      <span class="phone-form__label">Номер телефона</span>
+      <div class="phone-form__input-inner"><input class="phone" name="phone" type="text" placeholder="Номер телефона" /></div>
+      <div class="order__radiobuttons-inner _white">
+        <label class="order__label">
+          <input name="coop" class="order__input-checkbox" type="checkbox" />
+          <span class="coop"></span>
+          Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+        </label>
+      </div>
+      <button class="form__button button popup-btn" type="submit">Заказать</button>
+    </div>
+  </form>
+</div>
+<div class="product-modal" style="display: none" id="candies-modal">
+  <div class="product__inner">
+    <ul class="product__list">
+      <li class="product__item" data-id="1">
+        <div class="product__title">Имбирные конфеты с апельсином</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">26</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="2">
+        <div class="product__title">Имбирные конфеты с лимоном</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">34</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="3">
+        <div class="product__title">Имбирные конфеты с лаймом</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">40</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="4">
+        <div class="product__title">Имбирные конфеты с мёдом</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">39</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="5">
+        <div class="product__title">Имбирные конфеты с мятой</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">20</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="6">
+        <div class="product__title">Имбирные конфеты с манго</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">49</span> грн</div>
+        </div>
+      </li>
+    </ul>
+    <div class="product__row">
+      <div class="product__column">
+        <button class="product__button button">Онлайн заказ</button>
+        <button class="product__phone-button" data-fancybox data-src="#phone-modal" data-options='{"touch" : false}'>Заказ по телефону</button>
+      </div>
+      <div class="product__column">
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product__error _none">Необходимо добавить хотя бы 1 товар</div>
+    </div>
+  </div>
+</div>
+<div class="product-modal" style="display: none" id="lunches-modal">
+  <div class="product__inner">
+    <ul class="product__list">
+      <li class="product__item" data-id="1">
+        <div class="product__title">Бизнес-ланч “Рыбный”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">189</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="2">
+        <div class="product__title">Бизнес-ланч “Мясной”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">239</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="3">
+        <div class="product__title">Бизнес-ланч “Овощной”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">167</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="4">
+        <div class="product__title">Бизнес-ланч “Витаминный”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">200</span> грн</div>
+        </div>
+      </li>
+    </ul>
+    <div class="product__row">
+      <div class="product__column">
+        <button class="product__button button">Онлайн заказ</button>
+        <button class="product__phone-button" data-fancybox data-src="#phone-modal" data-options='{"touch" : false}'>Заказ по телефону</button>
+      </div>
+      <div class="product__column">
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product__error _none">Необходимо добавить хотя бы 1 товар</div>
+    </div>
+  </div>
+</div>
+<div class="product-order-modal" style="display: none" id="product-order-modal">
+  <form class="product-form" id="product-form" action="">
+    <div class="product-form__row">
+      <div class="product-form__column">
+        <div class="input-inner"><input class="input" name="name" type="text" placeholder="Имя" /></div>
+        <div class="input-inner">
+          <input id="phone" class="input phone" name="phone" type="phone" placeholder="Номер телефона" />
+        </div>
+        <div class="form__street-input input-inner"><input class="input" name="street" type="text" placeholder="Улица" /></div>
+        <div class="form__input-small-row">
+          <div class="form__house-input input-small"><input class="input" type="text" /></div>
+          <div class="form__floor-input input-small"><input class="input" type="text" /></div>
+          <div class="form__flat-input input-small"><input class="input" type="text" /></div>
+        </div>
+      </div>
+      <div class="product-form__column">
+        <div class="form__datetime-select select">
+          <button class="form__datetime-dropdown-btn input dropdown-btn">Время доставки: <span></span></button>
+          <ul class="form__datetime-dropdown-list dropdown-list">
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="9:00-13:00">9:00-13:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="14:00-20:00">14:00-20:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="21:00-00:00">21:00-00:00</li>
+          </ul>
+          <input class="form__datetime-input _input-hidden" type="text" name="datetime" />
+        </div>
+        <div class="form__payments-select select">
+          <button class="form__payments-dropdown-btn input dropdown-btn">Способ оплаты: <span></span></button>
+          <ul class="form__payments-dropdown-list dropdown-list">
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Наличными">Наличными</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Qiwi">Qiwi</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Visa/MasterCard">Visa/MasterCard</li>
+          </ul>
+          <input class="form__payments-input _input-hidden" type="text" name="payments" />
+        </div>
+        <div class="input-inner"><input class="form__about-input input" type="text" placeholder="Откуда узнали о нас" /></div>
+        <div class="form__contacts-select select">
+          <button class="form__contacts-dropdown-btn input dropdown-btn">Как с Вами связаться?: <span></span></button>
+          <ul class="form__contacts-dropdown-list dropdown-list">
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Позвонить на номер телефона">Позвонить на номер телефона</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Написать по номеру в whatsapp">Написать по номеру в whatsapp</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Отправить сообщение на почту">Отправить сообщение на почту</li>
+          </ul>
+          <input class="form__contacts-input _input-hidden" type="text" name="contacts" />
+        </div>
+      </div>
+    </div>
+    <div class="order__radiobuttons-inner _white">
+      <label class="order__label">
+        <input name="coop" class="order__input-checkbox" type="checkbox" />
+        <span class="coop"></span>
+        Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+      </label>
+    </div>
+    <div class="product-form__row">
+      <div class="product-form__column">
+        <button class="product-form__button button" type="submit">Заказать</button>
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product-form__column">
+        <div class="product-form__resume"></div>
+      </div>
+    </div>
+  </form>
+</div>

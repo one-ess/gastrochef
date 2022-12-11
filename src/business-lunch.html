@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/_head.html',{ "title":"Бизнес ланчи" })
+  <body>
+    <div class="wrapper">
+      <header class="header low-bg">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="index.html">
+              <picture>
+                <source srcset="img/global/logo.webp" type="image/webp" />
+                <img src="img/global/logo.png" loading="lazy" alt="Логотип GastroChef" />
+              </picture>
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Программы питания</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="business-lunch.html">Бизнес ланчи</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="gastro-shop.html">Gastro Shop</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Блог</a></li>
+              </ul>
+            </nav>
+            <a class="header__phone" href="tel:380689494919">
+              +38 (068) 949 - 49 - 19
+              <svg width="28" height="31" viewBox="0 0 28 31">
+                <use xlink:href="img/sprite.svg#icons--phone"></use>
+              </svg>
+            </a>
+            <ul class="header__language-list" data-da=".header__menu, 768, last">
+              <li class="header__language-item"><a class="header__language-link _active" href="#">RU</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">KZ</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">EN</a></li>
+            </ul>
+            <div class="header__menu-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__business-lunch-catalog catalog">
+          <div class="container">
+            <div class="catalog__actions">
+              <a class="catalog__back-link back-link" href="gastro-shop.html">
+                <svg width="9px" height="16px">
+                  <use xlink:href="img/sprite.svg#icons--arrow-right"></use>
+                </svg>
+              </a>
+              <a class="catalog__order-button button" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}' href="#">
+                Оформить заказ
+              </a>
+            </div>
+            <ul class="catalog__item-list">
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-01.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-01.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Рыбный”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>189</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-03.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-03.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Мясной”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>239</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-02.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-02.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Овощной”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>167</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-04.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-04.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Витаминный”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>200</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        @@include("./html/_slider-dishes.html")
+      </main>
+      @@include('./html/_footer.html')
+    </div>
+    @@include('./html/_popup.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

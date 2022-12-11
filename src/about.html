@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/_head.html',{ "title":"О нас" })
+  <body>
+    <div class="wrapper">
+      @@include('./html/_header.html')
+      <main class="page">
+        <section class="page__about about">
+          <div class="container">
+            <div class="about__inner">
+              <div class="about__row">
+                <div class="about__column">
+                  <h2 class="about__title">
+                    Здравствуйте! Меня зовут <span>Кобылинский Кирилл</span> , и я являюсь <span>основателем GastroChef.</span>
+                  </h2>
+                  <div class="about__text">
+                    <p>Я Мастер Спорта Украины по тяжёлой атлетике, а так же состоял в составе сборной Украины.</p>
+                    <p>
+                      У меня высшее образование национального университета физического воспитания и спорта Украины (НФВСУ), а так же в прошлом я
+                      профессиональный фитнес тренер!
+                    </p>
+                    <p>И я хочу Вам рассказать побольше о GastroChef.</p>
+                  </div>
+                </div>
+                <div class="about__column">
+                  <picture>
+                    <source srcset="img/global/owner.webp" type="image/webp" />
+                    <img src="img/global/owner.jpg" loading="lazy" alt="Основатель GastroChef" />
+                  </picture>
+                </div>
+              </div>
+              <div class="about__row">
+                <div class="about__column">
+                  <picture>
+                    <source srcset="img/about/about-img-01.webp" type="image/webp" />
+                    <img src="img/about/about-img-01.jpg" loading="lazy" alt="GastroChef" />
+                  </picture>
+                </div>
+                <div class="about__column">
+                  <h2 class="about__title">История GastroChef началась более 6-ти лет назад...</h2>
+                  <div class="about__text">
+                    <p>
+                      Долгое время я наблюдал как людям не хватает времени для правильного и здорового питания, какое правильного, просто питания
+                      регулярного.
+                    </p>
+                    <p>
+                      Они могли позавтракать, в обед съесть что-то типа шаурмы или снэка, а вечером в силу голода наесться, что плохо сказывалось на
+                      их обмене веществ и естественно здоровье.
+                    </p>
+                    <p>
+                      Желание хоть как-то изменить ситуацию и помочь людям не давало мне покоя и я решил открыть доставку еды правильного питания.
+                    </p>
+                    <p>
+                      Я со своим 17-и летним опытом в спорте и проф. образованием, вместе с диетологом разработали рационы правильного питания с
+                      подсчетом калорий (КБЖУ).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="about__row">
+                <h2 class="about__title">Знакомтесь! Команда GastroChef!</h2>
+                <picture>
+                  <source srcset="img/about/about-img-02.webp" type="image/webp" />
+                  <img src="img/about/about-img-02.jpg" loading="lazy" alt="Команда GastroChef" />
+                </picture>
+              </div>
+              <div class="about__row">
+                <div class="about__column">
+                  <h2 class="about__title">«GastroChef - легко для занятых»</h2>
+                  <div class="about__text">
+                    <p>
+                      GastroChef - правильное питание с доставкой на дом, создано что бы облегчить жизнь, освободить время от готовки, от ненужных
+                      перекусов, фастфудов и дать возможность чувствовать себя легко и полным энергии, сил, для новых свершений и побед.
+                    </p>
+                    <p>
+                      Все продукты для приготовления правильного питания закупаются только с сертификатами, а рационы готовятся на современной и
+                      безопасной кухне ночью перед приездом к Вам!
+                    </p>
+                    <p>Друзья, если у Вас остались вопросы Вы с легкостью можете позвонить нам или написать мне лично в Инстаграм или Фейсбук.</p>
+                    <p>С уважением, Кобылинский Кирилл.</p>
+                    <div>
+                      <a class="about__social" href=""><img src="img/global/instagram.png" alt="Иконка инстаграмма" /></a>
+                      <a class="about__social" href=""><img src="img/global/facebook.png" alt="Иконка фейсбука" /></a>
+                      <p>- Я в социальных сетях</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__column">
+                  <picture>
+                    <source srcset="img/about/about-img-03.webp" type="image/webp" />
+                    <img src="img/about/about-img-03.jpg" loading="lazy" alt="GastroChef" />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @@include("./html/_slider-dishes.html") @@include("./html/_ordernquestions.html")
+      </main>
+      @@include('./html/_footer.html')
+    </div>
+    @@include('./html/_popup.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

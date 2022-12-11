@@ -1,0 +1,113 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-family: $fontFamily;
+  color: $mainColor;
+  background-color: $lightWhite;
+  font-size: 18px;
+  font-weight: 400;
+  overflow-x: hidden;
+  z-index: 3;
+  position: relative;
+  &._active {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      z-index: 3;
+      background: rgba(2, 2, 2, 0.85);
+      overflow: hidden;
+    }
+  }
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &._active {
+    height: 100%;
+  }
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 $safePadding;
+  margin: 0 auto;
+}
+.button {
+  font-family: "Comfortaa";
+
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.025em;
+  color: $lightWhite;
+  background: $lightGreen;
+  box-shadow: 0px 0px 40px rgba(86, 86, 86, 0.3);
+  border-radius: 190px;
+  border: 3px solid transparent;
+  transition: background-color 0.4s, color 0.4s;
+  @include adaptiveValue("font-size", 26, 14, 1);
+  @include adaptiveValue("padding-top", 14, 9, 1);
+  @include adaptiveValue("padding-right", 69, 30, 1);
+  @include adaptiveValue("padding-bottom", 14, 9, 1);
+  @include adaptiveValue("padding-left", 69, 30, 1);
+  &._padding-small {
+    padding-left: 28px;
+    padding-right: 30px;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      color: $lightGreen;
+      background-color: $lightWhite;
+      border: 3px solid $lightGreen;
+      filter: drop-shadow(0px 0px 40px rgba(86, 86, 86, 0.3));
+      border-radius: 190px;
+    }
+  }
+}
+._block {
+  display: block;
+}
+._none {
+  display: none;
+}
+.back-link {
+  transform: rotate(180deg);
+  width: 30px;
+  height: 30px;
+  background-color: #dee6ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: $lightGreen;
+      svg {
+        fill: $lightWhite;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    width: 25px;
+    height: 25px;
+    svg {
+      width: 6px;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 23px;
+    height: 23px;
+  }
+}

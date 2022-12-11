@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/_head.html',{ "title":"Gastro-Shop конфеты" })
+  <body>
+    <div class="wrapper">
+      <header class="header low-bg">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="index.html">
+              <picture>
+                <source srcset="img/global/logo.webp" type="image/webp" />
+                <img src="img/global/logo.png" loading="lazy" alt="Логотип GastroChef" />
+              </picture>
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Программы питания</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="business-lunch.html">Бизнес ланчи</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="gastro-shop.html">Gastro Shop</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Блог</a></li>
+              </ul>
+            </nav>
+            <a class="header__phone" href="tel:380689494919">
+              +38 (068) 949 - 49 - 19
+              <svg width="28" height="31" viewBox="0 0 28 31">
+                <use xlink:href="img/sprite.svg#icons--phone"></use>
+              </svg>
+            </a>
+            <ul class="header__language-list" data-da=".header__menu, 768, last">
+              <li class="header__language-item"><a class="header__language-link _active" href="#">RU</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">KZ</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">EN</a></li>
+            </ul>
+            <div class="header__menu-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__candies candies">
+          <div class="container">
+            <h2 class="candies__title">Полезные конфеты</h2>
+            <div class="candies__text">
+              <p>
+                Представляем сладкую коллекцию полезных конфет. Созданы с любовью и изготовлены из натуральных продуктов без добавления сахара - с
+                заботой о вас и ваших близких!
+              </p>
+              <p>
+                Стоимость доставки 60 грн по предварительному заказу (за 1 сутки). Предварительный заказ предполагает доставку на следующий день с
+                6:00-10:00. Минимальный заказ - от 6 конфет. Вес 1 кофетки 25 г.
+              </p>
+              <p>Заказы "на завтра" принимаются до 11-00 текущего дня.</p>
+              <p>Конфеты доставляются в прозрачных пакетах со стикером. Вы можете заказать подарочный бокс с лентой стоимостью 20 грн</p>
+            </div>
+          </div>
+        </section>
+        <section class="page__candies-catalog catalog">
+          <div class="container">
+            <div class="catalog__actions">
+              <a class="catalog__back-link back-link" href="gastro-shop.html">
+                <svg width="9px" height="16px">
+                  <use xlink:href="img/sprite.svg#icons--arrow-right"></use>
+                </svg>
+              </a>
+              <a class="catalog__order-button button" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}' href="#"
+                >Оформить заказ</a
+              >
+            </div>
+            <ul class="catalog__item-list">
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/candies/candies-img-01.webp" type="image/webp" />
+                  <img src="img/candies/candies-img-01.jpg" loading="lazy" alt="Имбирные конфеты" />
+                </picture>
+                <div class="catalog__item-box">
+                  <h2 class="catalog__item-title">Имбирные конфеты с апельсином</h2>
+                  <div class="catalog__item-composition">
+                    <span>Состав:</span> Подсушенный миндаль, медовые финики, пряный имбирь, апельсин, миндальные лепестки
+                    <span>Не содержат сахара!</span>
+                  </div>
+                  <div class="catalog__nutrients">
+                    <span>Белки - 8</span>
+                    <span>Жиры - 20</span>
+                    <span>Углеводы - 36</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>26</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> шт</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/candies/candies-img-02.webp" type="image/webp" />
+                  <img src="img/candies/candies-img-02.jpg" loading="lazy" alt="Имбирные конфеты" />
+                </picture>
+                <div class="catalog__item-box">
+                  <h2 class="catalog__item-title">Имбирные конфеты с лимоном</h2>
+                  <div class="catalog__item-composition">
+                    <span>Состав:</span> Подсушенный миндаль, медовые финики, пряный имбирь, апельсин, миндальные лепестки
+                    <span>Не содержат сахара!</span>
+                  </div>
+                  <div class="catalog__nutrients">
+                    <span>Белки - 8</span>
+                    <span>Жиры - 20</span>
+                    <span>Углеводы - 36</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>34</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> шт</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/candies/candies-img-03.webp" type="image/webp" />
+                  <img src="img/candies/candies-img-03.jpg" loading="lazy" alt="Имбирные конфеты" />
+                </picture>
+                <div class="catalog__item-box">
+                  <h2 class="catalog__item-title">Имбирные конфеты с лаймом</h2>
+                  <div class="catalog__item-composition">
+                    <span>Состав:</span> Подсушенный миндаль, медовые финики, пряный имбирь, апельсин, миндальные лепестки
+                    <span>Не содержат сахара!</span>
+                  </div>
+                  <div class="catalog__nutrients">
+                    <span>Белки - 8</span>
+                    <span>Жиры - 20</span>
+                    <span>Углеводы - 36</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>40</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> шт</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/candies/candies-img-01.webp" type="image/webp" />
+                  <img src="img/candies/candies-img-01.jpg" loading="lazy" alt="Имбирные конфеты" />
+                </picture>
+                <div class="catalog__item-box">
+                  <h2 class="catalog__item-title">Имбирные конфеты с лимоном</h2>
+                  <div class="catalog__item-composition">
+                    <span>Состав:</span> Подсушенный миндаль, медовые финики, пряный имбирь, апельсин, миндальные лепестки
+                    <span>Не содержат сахара!</span>
+                  </div>
+                  <div class="catalog__nutrients">
+                    <span>Белки - 8</span>
+                    <span>Жиры - 20</span>
+                    <span>Углеводы - 36</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#candies-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>34</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> шт</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        @@include("./html/_slider-dishes.html")
+      </main>
+      @@include('./html/_footer.html')
+    </div>
+    @@include('./html/_popup.html')
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

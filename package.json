@@ -1,0 +1,42 @@
+{
+  "name": "gulp-2022",
+  "version": "1.0.0",
+  "description": "Gulp build for web developming",
+  "author": "TArthur",
+  "main": "gulpfile.js",
+  "type": "module",
+  "license": "ISC",
+  "scripts": {
+    "develop": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.54.5",
+    "terser-webpack-plugin": "^5.3.6",
+    "webpack": "^5.74.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "jquery": "^3.6.1",
+    "jquery-validation": "^1.19.5",
+    "jquery.maskedinput": "^1.4.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

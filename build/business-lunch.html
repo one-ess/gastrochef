@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Бизнес ланчи</title>
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header low-bg">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="index.html">
+              <picture>
+                <source srcset="img/global/logo.webp" type="image/webp" />
+                <img src="img/global/logo.png" loading="lazy" alt="Логотип GastroChef" />
+              </picture>
+            </a>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item"><a class="header__menu-link" href="index.html">Программы питания</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="business-lunch.html">Бизнес ланчи</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="gastro-shop.html">Gastro Shop</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="about.html">О нас</a></li>
+                <li class="header__menu-item"><a class="header__menu-link" href="blog.html">Блог</a></li>
+              </ul>
+            </nav>
+            <a class="header__phone" href="tel:380689494919">
+              +38 (068) 949 - 49 - 19
+              <svg width="28" height="31" viewBox="0 0 28 31">
+                <use xlink:href="img/sprite.svg#icons--phone"></use>
+              </svg>
+            </a>
+            <ul class="header__language-list" data-da=".header__menu, 768, last">
+              <li class="header__language-item"><a class="header__language-link _active" href="#">RU</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">KZ</a></li>
+              <li class="header__language-item"><a class="header__language-link" href="#">EN</a></li>
+            </ul>
+            <div class="header__menu-burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <section class="page__business-lunch-catalog catalog">
+          <div class="container">
+            <div class="catalog__actions">
+              <a class="catalog__back-link back-link" href="gastro-shop.html">
+                <svg width="9px" height="16px">
+                  <use xlink:href="img/sprite.svg#icons--arrow-right"></use>
+                </svg>
+              </a>
+              <a class="catalog__order-button button" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}' href="#">
+                Оформить заказ
+              </a>
+            </div>
+            <ul class="catalog__item-list">
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-01.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-01.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Рыбный”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>189</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-03.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-03.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Мясной”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>239</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-02.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-02.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Овощной”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>167</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source srcset="img/business-lunch/business-lunch-img-04.webp" type="image/webp" />
+                  <img src="img/business-lunch/business-lunch-img-04.jpg" loading="lazy" alt="Бизнес ланч" />
+                </picture>
+                <div class="catalog__item-box">
+                  <div class="catalog__title-inner">
+                    <h2 class="catalog__item-title">Бизнес-ланч “Витаминный”</h2>
+                    <span>250 г</span>
+                    <span>346 ккал</span>
+                  </div>
+                  <div class="catalog__lunch-composition">
+                    <p>1. Бульон куриный с лапшой и яйцом</p>
+                    <p>2. Рис жареный с курицей</p>
+                    <p>3. Салат овощной с базиликово-медовой заправкой</p>
+                  </div>
+                  <div class="catalog__counter">
+                    <div class="catalog__enumerator minus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>-</div>
+                    <div class="catalog__number">1</div>
+                    <div class="catalog__enumerator plus" data-fancybox data-src="#lunches-modal" data-options='{"touch" : false}'>+</div>
+                    <div class="catalog__price"><span>200</span> грн/</div>
+                    <div class="catalog__amount-number"><span>1</span> порция</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="dishes">
+  <h2 class="dishes__title">Фото блюд</h2>
+  <div class="dishes__slider">
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-01.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-01.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-02.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-02.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-03.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-03.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-04.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-04.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-05.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-05.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-06.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-06.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-06.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-06.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+    <div class="dishes__slider-item">
+      <picture>
+        <source srcset="img/global/dish-slider-img-06.webp" type="image/webp" />
+        <img src="img/global/dish-slider-img-06.jpg" loading="lazy" alt="Фото блюда" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="index.html">Программы питания</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="business-lunch.html">Бизнес ланчи</a>
+          </li>
+          <li class="footer__menu-item">
+            <a class="footer__menu-link" href="gastro-shop.html">Gastro Shop</a>
+          </li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="about.html">О нас</a></li>
+          <li class="footer__menu-item"><a class="footer__menu-link" href="blog.html">Блог</a></li>
+        </ul>
+      </nav>
+      <a class="footer__logo" href="#">
+        <picture>
+          <source srcset="img/global/footer-logo.webp" type="image/webp" />
+          <img src="img/global/footer-logo.jpg" loading="lazy" alt="Логотип GastroChef" />
+        </picture>
+      </a>
+      <ul class="footer__action-list">
+        <li class="footer__action-item"><a class="footer__action-link" href="#">Условия сотрудничества</a></li>
+        <li class="footer__action-item"><a class="footer__action-link" href="#">FAQ</a></li>
+        <li class="footer__action-item">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#"><img src="img/global/instagram.png" alt="Иконка инстаграмма" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#"><img src="img/global/facebook.png" alt="Иконка фейсбука" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#"><img src="img/global/viber.png" alt="Иконка вайбера" /></a>
+            </li>
+            <li class="footer__social-item">
+              <a class="footer__social-link" href="#"><img src="img/global/telegram.png" alt="Иконка телеграмма" /></a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__action-item"><a class="footer__action-link" href="tel:+380689494919">+38 (068) 949 - 49 - 19</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="order-modal" style="display: none" id="order-modal">
+  <form id="order-form" class="order-modal__form form" action="">
+    <div class="form__row">
+      <div class="form__column">
+        <div class="input-inner"><input id="name" class="input" name="name" type="text" placeholder="Имя" /></div>
+        <div class="input-inner">
+          <input id="phone" class="input phone" name="phone" type="phone" placeholder="Номер телефона" />
+        </div>
+        <div class="input-inner">
+          <input id="email" class="input" name="email" type="email" placeholder="Электронная почта" />
+        </div>
+        <div class="form__nutrition-programs-select select">
+          <button class="form__nutrition-programs-dropdown-btn input dropdown-btn">Программы питания: <span></span></button>
+          <ul class="form__nutrition-programs-dropdown-list dropdown-list">
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="ExpressFit">Express fit</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Slim">Slim</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Fitness">Fitness</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Balance">Balance</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Balance+">Balance+</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Strong">Strong</li>
+            <li class="form__nutrition-programs-dropdown-item dropdown-item" data-value="Maxifit">Maxi fit</li>
+          </ul>
+          <input class="form__nutrition-programs-input programs _input-hidden" type="text" name="nutritionprogram" />
+        </div>
+        <div class="form__special-programs-select select">
+          <button class="form__special-programs-dropdown-btn input dropdown-btn">Специальные программы: <span></span></button>
+          <ul class="form__special-programs-dropdown-list dropdown-list">
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Keto">Keto</li>
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Detox">Detox</li>
+            <li class="form__special-programs-dropdown-item dropdown-item" data-value="Veggie">Veggie</li>
+          </ul>
+          <input class="form__special-programs-input programs _input-hidden" type="text" name="specialprogram" />
+        </div>
+        <div class="form__street-input input-inner"><input class="input" name="street" type="text" placeholder="Улица" /></div>
+        <div class="form__input-small-row">
+          <div class="form__house-input input-small"><input class="input" type="text" /></div>
+          <div class="form__floor-input input-small"><input class="input" type="text" /></div>
+          <div class="form__flat-input input-small"><input class="input" type="text" /></div>
+        </div>
+      </div>
+      <div class="form__column">
+        <div class="form__datetime-select select">
+          <button class="form__datetime-dropdown-btn input dropdown-btn">Время доставки: <span></span></button>
+          <ul class="form__datetime-dropdown-list dropdown-list">
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="9:00-13:00">9:00-13:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="14:00-20:00">14:00-20:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="21:00-00:00">21:00-00:00</li>
+          </ul>
+          <input class="form__datetime-input _input-hidden" type="text" name="datetime" />
+        </div>
+
+        <div class="input-inner">
+          <input class="form__days-input input" type="text" placeholder="Количество дней заказа" />
+        </div>
+        <div class="form__payments-select select">
+          <button class="form__payments-dropdown-btn input dropdown-btn">Способ оплаты: <span></span></button>
+          <ul class="form__payments-dropdown-list dropdown-list">
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Наличными">Наличными</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Qiwi">Qiwi</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Visa/MasterCard">Visa/MasterCard</li>
+          </ul>
+          <input class="form__payments-input _input-hidden" type="text" name="payments" />
+        </div>
+        <div class="form__cutlery-select select">
+          <button class="form__cutlery-dropdown-btn input dropdown-btn">Мне нужны приборы: <span></span></button>
+          <ul class="form__cutlery-dropdown-list dropdown-list">
+            <li class="form__cutlery-dropdown-item dropdown-item" data-value="Да, нужны">Да, нужны</li>
+            <li class="form__cutlery-dropdown-item dropdown-item" data-value="Нет, не нужны">Нет, не нужны</li>
+          </ul>
+          <input class="form__cutlery-input _input-hidden" type="text" name="cutlery" />
+        </div>
+        <div class="input-inner"><input class="form__about-input input" type="text" placeholder="Откуда узнали о нас" /></div>
+        <div class="input-inner"><input class="form__wishes-input input" type="text" placeholder="Пожелания" /></div>
+        <div class="form__contacts-select select">
+          <button class="form__contacts-dropdown-btn input dropdown-btn">Как с Вами связаться?: <span></span></button>
+          <ul class="form__contacts-dropdown-list dropdown-list">
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Позвонить на номер телефона">Позвонить на номер телефона</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Написать по номеру в whatsapp">Написать по номеру в whatsapp</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Отправить сообщение на почту">Отправить сообщение на почту</li>
+          </ul>
+          <input class="form__contacts-input _input-hidden" type="text" name="contacts" />
+        </div>
+      </div>
+    </div>
+    <div class="form__row">
+      <div class="order__radiobuttons-inner _white">
+        <label class="order__label">
+          <input class="order__input-checkbox" type="checkbox" />
+          <span></span>
+          Тест-день! Получить скидку -30%?
+        </label>
+        <label class="order__label">
+          <input name="coop" class="order__input-checkbox" type="checkbox" />
+          <span class="coop"></span>
+          Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+        </label>
+      </div>
+      <button class="form__button button popup-btn" type="submit">Заказать</button>
+    </div>
+  </form>
+</div>
+<div class="phone-modal" style="display: none" id="phone-modal">
+  <form id="phone-form" action="">
+    <div class="phone-form__inner">
+      <span class="phone-form__label">Имя</span>
+      <div class="phone-form__input-inner"><input name="name" type="text" placeholder="Имя" /></div>
+      <span class="phone-form__label">Номер телефона</span>
+      <div class="phone-form__input-inner"><input class="phone" name="phone" type="text" placeholder="Номер телефона" /></div>
+      <div class="order__radiobuttons-inner _white">
+        <label class="order__label">
+          <input name="coop" class="order__input-checkbox" type="checkbox" />
+          <span class="coop"></span>
+          Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+        </label>
+      </div>
+      <button class="form__button button popup-btn" type="submit">Заказать</button>
+    </div>
+  </form>
+</div>
+<div class="product-modal" style="display: none" id="candies-modal">
+  <div class="product__inner">
+    <ul class="product__list">
+      <li class="product__item" data-id="1">
+        <div class="product__title">Имбирные конфеты с апельсином</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">26</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="2">
+        <div class="product__title">Имбирные конфеты с лимоном</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">34</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="3">
+        <div class="product__title">Имбирные конфеты с лаймом</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">40</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="4">
+        <div class="product__title">Имбирные конфеты с мёдом</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">39</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="5">
+        <div class="product__title">Имбирные конфеты с мятой</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">20</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="6">
+        <div class="product__title">Имбирные конфеты с манго</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">49</span> грн</div>
+        </div>
+      </li>
+    </ul>
+    <div class="product__row">
+      <div class="product__column">
+        <button class="product__button button">Онлайн заказ</button>
+        <button class="product__phone-button" data-fancybox data-src="#phone-modal" data-options='{"touch" : false}'>Заказ по телефону</button>
+      </div>
+      <div class="product__column">
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product__error _none">Необходимо добавить хотя бы 1 товар</div>
+    </div>
+  </div>
+</div>
+<div class="product-modal" style="display: none" id="lunches-modal">
+  <div class="product__inner">
+    <ul class="product__list">
+      <li class="product__item" data-id="1">
+        <div class="product__title">Бизнес-ланч “Рыбный”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">189</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="2">
+        <div class="product__title">Бизнес-ланч “Мясной”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">239</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="3">
+        <div class="product__title">Бизнес-ланч “Овощной”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">167</span> грн</div>
+        </div>
+      </li>
+      <li class="product__item" data-id="4">
+        <div class="product__title">Бизнес-ланч “Витаминный”</div>
+        <div class="catalog__counter">
+          <div class="catalog__enumerator minus enumerator">-</div>
+          <div class="catalog__number">0</div>
+          <div class="catalog__enumerator plus enumerator">+</div>
+          <div class="catalog__price"><span>0</span><span class="qty">200</span> грн</div>
+        </div>
+      </li>
+    </ul>
+    <div class="product__row">
+      <div class="product__column">
+        <button class="product__button button">Онлайн заказ</button>
+        <button class="product__phone-button" data-fancybox data-src="#phone-modal" data-options='{"touch" : false}'>Заказ по телефону</button>
+      </div>
+      <div class="product__column">
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product__error _none">Необходимо добавить хотя бы 1 товар</div>
+    </div>
+  </div>
+</div>
+<div class="product-order-modal" style="display: none" id="product-order-modal">
+  <form class="product-form" id="product-form" action="">
+    <div class="product-form__row">
+      <div class="product-form__column">
+        <div class="input-inner"><input class="input" name="name" type="text" placeholder="Имя" /></div>
+        <div class="input-inner">
+          <input id="phone" class="input phone" name="phone" type="phone" placeholder="Номер телефона" />
+        </div>
+        <div class="form__street-input input-inner"><input class="input" name="street" type="text" placeholder="Улица" /></div>
+        <div class="form__input-small-row">
+          <div class="form__house-input input-small"><input class="input" type="text" /></div>
+          <div class="form__floor-input input-small"><input class="input" type="text" /></div>
+          <div class="form__flat-input input-small"><input class="input" type="text" /></div>
+        </div>
+      </div>
+      <div class="product-form__column">
+        <div class="form__datetime-select select">
+          <button class="form__datetime-dropdown-btn input dropdown-btn">Время доставки: <span></span></button>
+          <ul class="form__datetime-dropdown-list dropdown-list">
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="9:00-13:00">9:00-13:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="14:00-20:00">14:00-20:00</li>
+            <li class="form__datetime-dropdown-item dropdown-item" data-value="21:00-00:00">21:00-00:00</li>
+          </ul>
+          <input class="form__datetime-input _input-hidden" type="text" name="datetime" />
+        </div>
+        <div class="form__payments-select select">
+          <button class="form__payments-dropdown-btn input dropdown-btn">Способ оплаты: <span></span></button>
+          <ul class="form__payments-dropdown-list dropdown-list">
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Наличными">Наличными</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Qiwi">Qiwi</li>
+            <li class="form__payments-dropdown-item dropdown-item" data-value="Visa/MasterCard">Visa/MasterCard</li>
+          </ul>
+          <input class="form__payments-input _input-hidden" type="text" name="payments" />
+        </div>
+        <div class="input-inner"><input class="form__about-input input" type="text" placeholder="Откуда узнали о нас" /></div>
+        <div class="form__contacts-select select">
+          <button class="form__contacts-dropdown-btn input dropdown-btn">Как с Вами связаться?: <span></span></button>
+          <ul class="form__contacts-dropdown-list dropdown-list">
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Позвонить на номер телефона">Позвонить на номер телефона</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Написать по номеру в whatsapp">Написать по номеру в whatsapp</li>
+            <li class="form__contacts-dropdown-item dropdown-item" data-value="Отправить сообщение на почту">Отправить сообщение на почту</li>
+          </ul>
+          <input class="form__contacts-input _input-hidden" type="text" name="contacts" />
+        </div>
+      </div>
+    </div>
+    <div class="order__radiobuttons-inner _white">
+      <label class="order__label">
+        <input name="coop" class="order__input-checkbox" type="checkbox" />
+        <span class="coop"></span>
+        Согласен с <a class="order__coop-link" href="#">условиями сотрудничества</a>
+      </label>
+    </div>
+    <div class="product-form__row">
+      <div class="product-form__column">
+        <button class="product-form__button button" type="submit">Заказать</button>
+        <div class="product__total"><span class="product__amount">0</span> шт / <span class="product__totalPrice">0</span> грн</div>
+      </div>
+      <div class="product-form__column">
+        <div class="product-form__resume"></div>
+      </div>
+    </div>
+  </form>
+</div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
