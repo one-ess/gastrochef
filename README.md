@@ -49,8 +49,8 @@ Dev зависимости:
 
 Результат:
 
-[Главная](https://one-ess.github.io/gastrochef/build/index.html)  
-[О нас](https://one-ess.github.io/gastrochef/build/about.html)  
-[Блог](https://one-ess.github.io/gastrochef/build/blog.html)  
-[Магазин](https://one-ess.github.io/gastrochef/build/shop.html)  
-[Каталог](https://one-ess.github.io/gastrochef/build/catalog.html)
+[Главная](https://gastrochef.vercel.app/)  
+[О нас](https://gastrochef.vercel.app/about.html)  
+[Блог](https://gastrochef.vercel.app/blog.html)  
+[Магазин](https://gastrochef.vercel.app/shop.html)  
+[Каталог](https://gastrochef.vercel.app/catalog.html)
