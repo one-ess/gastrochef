@@ -1,0 +1,71 @@
+@use "../settings/vars" as *;
+
+.service {
+  position: relative;
+  padding: 100px 0;
+  @media (max-width: 1325px) {
+    padding: 50px 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-220%);
+    width: 550px;
+    height: 550px;
+    background-image: url("./img/ellipse-02.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__list {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 37px 60px;
+    border-radius: 30px;
+    background-color: rgba($backgroundColor, 0.8);
+    @media (max-width: 1325px) {
+      max-width: 690px;
+      margin: 0 auto;
+      padding: 20px 32px;
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+      justify-items: center;
+      max-width: 240px;
+      padding: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+    @media (max-width: 1325px) {
+      max-width: 100px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 10px;
+    @media (max-width: 1325px) {
+      width: 50px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    text-align: center;
+    @media (max-width: 1325px) {
+      font-size: 7px;
+    }
+    @media (max-width: 767px) {
+      font-size: 8px;
+    }
+  }
+}

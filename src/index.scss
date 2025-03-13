@@ -1,0 +1,20 @@
+@use "./scss/settings/fonts";
+@use "./scss/settings/null";
+@use "./scss/settings/base";
+
+@use "swiper/css/bundle";
+
+@use "./scss/global/global";
+@use "./scss/global/modal";
+
+@use "./scss/sections/header";
+@use "./scss/sections/hero";
+@use "./scss/partials/service";
+@use "./scss/sections/mealplan";
+@use "./scss/sections/dishes";
+@use "./scss/sections/order";
+@use "./scss/sections/about";
+@use "./scss/sections/blog";
+@use "./scss/sections/shop";
+@use "./scss/sections/catalog";
+@use "./scss/sections/footer";

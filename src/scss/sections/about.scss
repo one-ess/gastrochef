@@ -1,0 +1,241 @@
+@use "../settings/vars" as *;
+
+.about {
+  position: relative;
+  padding: 150px 0;
+  @media (max-width: 1325px) {
+    padding: 50px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__container {
+    @media (max-width: 1325px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-family: $secondFamily;
+    font-size: 32px;
+    font-weight: 700;
+    span {
+      color: $green;
+    }
+    @media (max-width: 1325px) {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+  }
+
+  &__text {
+    font-family: $secondFamily;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    @media (max-width: 1325px) {
+      font-size: 10px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 20px;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+
+  &__social-link {
+    path {
+      transition: fill 0.3s ease;
+    }
+    &:hover {
+      path {
+        fill: $green;
+      }
+    }
+    @media (max-width: 1325px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.about {
+  &:nth-child(1) {
+    &::before {
+      left: calc(50% + 100px);
+      width: 750px;
+      height: 750px;
+      background-image: url("./img/hero-03.webp");
+    }
+
+    .about__content {
+      max-width: 526px;
+    }
+
+    .about__text {
+      &:last-child {
+        font-weight: 700;
+      }
+    }
+
+    @media (max-width: 1325px) {
+      &::before {
+        left: auto;
+        right: 0;
+        width: 350px;
+        height: 350px;
+      }
+      .about__content {
+        max-width: 280px;
+        margin-right: 350px;
+      }
+    }
+    @media (max-width: 767px) {
+      &::before {
+        top: 50px;
+        right: 20px;
+        width: 150px;
+        height: 150px;
+      }
+      .about__content {
+        margin-top: 130px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    padding-top: 200px;
+
+    &::before {
+      left: calc(50% - 960px);
+      width: 850px;
+      height: 850px;
+      background-image: url("./img/about-bg-01.webp");
+    }
+
+    .about__content {
+      max-width: 660px;
+      margin-left: auto;
+    }
+
+    @media (max-width: 1325px) {
+      &::before {
+        left: 0;
+        width: 350px;
+        height: 350px;
+      }
+      .about__content {
+        max-width: 350px;
+        margin-left: 350px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 0;
+      &::before {
+        top: 60px;
+        width: 250px;
+        height: 250px;
+      }
+      .about__content {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    .about__container {
+      max-width: 1920px;
+      padding: 0;
+    }
+
+    .about__title {
+      text-align: center;
+    }
+
+    @media (max-width: 1325px) {
+      .about__container {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding: 20px 0;
+      .about__title {
+        max-width: 280px;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    padding-bottom: 0;
+
+    &::before {
+      top: calc(50% + 130px);
+      left: calc(50% - 40px);
+      width: 1000px;
+      height: 1000px;
+      background-image: url("./img/about-bg-02.webp");
+    }
+
+    .about__content {
+      max-width: 640px;
+      .about__text {
+        &:nth-child(4) {
+          font-weight: 700;
+        }
+        &:nth-child(5) {
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    @media (max-width: 1325px) {
+      &::before {
+        top: 50%;
+        left: auto;
+        right: 0;
+        width: 350px;
+        height: 350px;
+      }
+      .about__content {
+        max-width: 350px;
+        margin-right: 350px;
+        .about__text {
+          &:nth-child(5) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      padding-bottom: 0;
+      &::before {
+        top: 170px;
+      }
+      .about__content {
+        padding-top: 250px;
+        margin-right: 0;
+      }
+    }
+  }
+}

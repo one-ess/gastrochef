@@ -1,0 +1,63 @@
+@use "../settings/vars" as *;
+
+.dishes {
+  position: relative;
+  padding: 150px 0;
+  @media (max-width: 1325px) {
+    padding: 50px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-1000px);
+    width: 300px;
+    height: 300px;
+    background-image: url("./img/ellipse-03.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__container {
+    max-width: 1920px;
+    padding: 0;
+  }
+
+  &__title {
+    font-family: $secondFamily;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    @media (max-width: 1325px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__swiper-container {
+    padding: 10px 0;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    left: -190px;
+    @media (max-width: 1325px) {
+      left: 0;
+    }
+  }
+
+  &__item {
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(86, 86, 86, 0.3);
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

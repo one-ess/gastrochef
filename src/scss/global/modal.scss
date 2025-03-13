@@ -1,0 +1,137 @@
+@use "../settings/vars" as *;
+
+.online-order {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+
+  &__form {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    @media (max-width: 767px) {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .form__label_name,
+    .form__label_phone {
+      margin-bottom: 0;
+    }
+    .form__label_invalid,
+    .form__label_valid {
+      &::before {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .form__label_checkbox {
+      color: $backgroundColor;
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      gap: 15px;
+      .form__label {
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__button {
+    align-self: flex-start;
+    box-shadow: 0px 0px 21px $green;
+    @media (max-width: 767px) {
+      align-self: center;
+      font-size: 18px;
+    }
+  }
+
+  &__button-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 23px;
+    background-color: transparent;
+    color: $backgroundColor;
+    text-align: center;
+  }
+}
+
+.online-order_active {
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.custom-select {
+  position: relative;
+
+  &__button {
+    padding-top: 12px;
+    span {
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+  }
+
+  &__list {
+    display: none;
+  }
+
+  &__list_active {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $green;
+    z-index: 22;
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+  }
+
+  &__item {
+    color: $backgroundColor;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    cursor: pointer;
+    &:hover {
+      font-weight: 700;
+    }
+    @media (max-width: 767px) {
+      padding: 10px 20px;
+      font-size: 10px;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

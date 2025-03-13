@@ -1,0 +1,124 @@
+@use "../settings/vars" as *;
+
+.footer {
+  margin-top: 100px;
+  box-shadow: 0px 0px 10px rgba(86, 86, 86, 0.3);
+  @media (max-width: 767px) {
+    margin-top: 50px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    @media (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 30px;
+      padding: 20px 20px 30px;
+    }
+  }
+
+  &__menu {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    @media (max-width: 1325px) {
+      gap: 12px;
+    }
+  }
+
+  &__menu-link {
+    font-family: $secondFamily;
+    font-size: 20px;
+    font-weight: 700;
+    color: $mainColor;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $green;
+    }
+    @media (max-width: 1325px) {
+      font-size: 14px;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    &::before {
+      content: "сервис здорового питания";
+      position: absolute;
+      left: -20px;
+      bottom: -15px;
+      white-space: nowrap;
+      color: $mainColor;
+    }
+  }
+
+  &__info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: right;
+    @media (max-width: 1325px) {
+      gap: 12px;
+    }
+  }
+
+  &__info-item {
+    @media (max-width: 767px) {
+      text-align: center;
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  &__info-link {
+    font-family: $secondFamily;
+    font-size: 20px;
+    font-weight: 700;
+    color: $mainColor;
+    text-align: right;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $green;
+    }
+    @media (max-width: 1325px) {
+      font-size: 14px;
+    }
+  }
+
+  &__info-link_phone {
+    font-family: $fontFamily;
+    color: $green;
+    transition: color 0.2s ease;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  &__social-link {
+    path {
+      transition: fill 0.3s ease;
+    }
+    &:hover {
+      path {
+        fill: $green;
+      }
+    }
+  }
+}
