@@ -4,15 +4,13 @@
   position: fixed;
   inset: 0;
   z-index: 99;
-  width: 100vw;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 15px;
-  overflow: hidden;
   opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-x: hidden;
   visibility: hidden;
   transition: opacity 0.2s ease-in-out;
 
@@ -67,6 +65,7 @@
     position: absolute;
     top: -40px;
     right: 0;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,7 +108,7 @@
     background-color: $green;
     z-index: 22;
     border-radius: 0px 0px 20px 20px;
-    overflow: hidden;
+    //overflow-y: scroll;
   }
 
   &__item {
